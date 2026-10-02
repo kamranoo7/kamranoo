@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <main className="portfolio" id="top">
       <nav className="nav container">
-        <a href="#top" className="wordmark" aria-label="Kamran Khan home"><span>KK</span><strong>Kamran<br />Khan</strong></a>
+        <a href="#top" className="wordmark" aria-label="Kamran Khan home"><span>KK</span><strong><span className="wordmark-first">Kamran</span><span className="wordmark-last">Khan</span></strong></a>
         <div className={menuOpen ? 'nav-menu open' : 'nav-menu'}>
           {['Work', 'About', 'Experience', 'Contact'].map((item) => <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu}>{item}</a>)}
           <a className="nav-cv" href="/resume.docx" download>Download CV <ArrowUpRight size={14} /></a>
